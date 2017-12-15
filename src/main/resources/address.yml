@@ -1,0 +1,20 @@
+address:
+  request:
+  - field: address1Txt
+    mandatory: true
+    max: 10
+    min: 4
+    regex: '[A-Za-z]*'
+    validateMethod: validateAddress1Txt
+  - field: state
+    mandatory: true
+    max: 10
+    min: 4
+    regex: '[A-Za-z]*'
+    validateMethod: validateState
+  - field: postCode
+    mandatory: true
+    max: 10
+    min: 4
+    regex: '[A-Za-z]*'
+    validateMethod: validatePostCode

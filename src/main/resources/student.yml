@@ -1,0 +1,34 @@
+student:
+  request:
+  - field: studentId
+    mandatory: true
+    max: 10
+    min: 4
+    regex: '[0-9]*'
+    validateMethod: validateStudentId
+  - field: studentFirstName
+    mandatory: true
+    max: 10
+    min: 4
+    regex: '[A-Za-z]*'
+    validateMethod: validateStudentFirstName
+  - field: studentLastName
+    mandatory: true
+    max: 10
+    min: 4
+    regex: '[A-Za-z]*'
+    validateMethod: validateStudentLastName
+  - field: section
+    mandatory: true
+    max: 10
+    min: 4
+    regex: '[A-Za-z]*'
+    validateMethod: validateSection
+  - field: major
+    mandatory: true
+    max: 10
+    min: 4
+    regex: '[A-Za-z]*'
+    validateMethod: validateMajor
+  - field: studentAddress
+    validateMethod: validateStudentAddress
